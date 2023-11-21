@@ -6,7 +6,7 @@ public class AnagramCheck {
 	
     public static void main(String[] args) {
         String str1 = "bare";
-        String str2 = "bear";
+        String str2 = "wear";
 
         if (areAnagrams(str1, str2)) {
             System.out.println(str1 + " and " + str2 + " are anagrams.");
