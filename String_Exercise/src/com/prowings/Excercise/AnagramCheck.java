@@ -3,6 +3,7 @@ package com.prowings.Excercise;
 import java.util.Arrays;
 
 public class AnagramCheck {
+	
     public static void main(String[] args) {
         String str1 = "bare";
         String str2 = "bear";
