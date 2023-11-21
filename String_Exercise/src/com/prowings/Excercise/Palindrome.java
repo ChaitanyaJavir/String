@@ -18,8 +18,15 @@ public class Palindrome
 	}
 
 	private static boolean isPalindrome(String name) {
+		StringBuffer sb = new StringBuffer(name);
+		String reversed = sb.reverse().toString();
 		
-		return true;
+		if(name.equals(reversed))
+		{
+			return true;
+		}
+		else
+			return false;
 	}
 
 }
