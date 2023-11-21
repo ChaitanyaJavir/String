@@ -1,27 +1,24 @@
 package com.prowings.Excercise;
 
 public class Duplicate {
-	public static void main(String[] args, int i) {
+    public static void main(String[] args) {
 
-		String input = new String("AABCB");
-		String output = new String();
+        String input = "AABCB";
+        String output = "";
 
-		for (int i1 = 0; i1 < input.length(); i1++) {
-			for (int j = 0; i1 < output.length(); j++) {
-				if (input.charAt(i1) != output.charAt(j)) {
-					output = output + input.charAt(j);
-					{
-						boolean ifDuplicate = true;
-						break;
-					}
-				}
-			}
-		}
-		boolean isDuplicate = false;
-		if (!isDuplicate) {
-			output = output + input.charAt(i);
-		}
+        for (int i = 0; i < input.length(); i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < output.length(); j++) {
+                if (input.charAt(i) == output.charAt(j)) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                output = output + input.charAt(i);
+            }
+        }
 
-	}
-
+        System.out.println("output: " + output);
+    }
 }
